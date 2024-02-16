@@ -60,14 +60,19 @@
                     <div class="card-body">
                       <h2 class="text-center text-2xl">Rectangle</h2>
                       <p class="text-xl">Area(A)=w X l</p>
+
                       <div class="flex items-center">
-                      <input class="w-20 text-2xl p-2 rounded-sm bg-slate-100" type="text" placeholder="w">
+                      <input id="rectangle-width" class="w-20 text-2xl p-2 rounded-sm bg-slate-100" type="text" placeholder="w">
                       <span class="mr-4 ml-2">cm</span>
-                      <input class="w-20 text-2xl p-2 rounded-sm  bg-slate-100" type="text" name="" id="" placeholder="l">
+                      <input id="rectangle-length" class="w-20 text-2xl p-2 rounded-sm  bg-slate-100" type="text" name="" id="" placeholder="l">
                       <span class="mr-4 ml-2">cm</span>
                       </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="rectangle-area"></span>
+                          <span>cm <sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions ">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -155,5 +160,6 @@
          </div>
     </main>
      <script src="js/triangle.js"></script>
+     <script src="js/rectangle.js"></script>
 </body>
 </html>
